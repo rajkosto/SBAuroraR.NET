@@ -169,6 +169,7 @@ xcopy /I /Y "$(SolutionDir)\CTSDK\Redist\$(PlatformShortName)\*.dll" "$(Solution
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="LEDIndex.h" />
     <ClInclude Include="DllMain.h" />
     <ClInclude Include="LEDManager.h" />
     <ClInclude Include="Types.h" />

@@ -31,5 +31,8 @@
     <ClInclude Include="Types.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="LEDIndex.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
