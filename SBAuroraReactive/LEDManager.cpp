@@ -87,7 +87,7 @@ void SBAuroraReactive::LEDManager::CloseDevice()
 		throw gcnew System::Runtime::InteropServices::ExternalException("Error closing ICTLEDMgr device", hr);
 }
 
-static int TimerCallbackHandler(PCTLEDMGRTIMERPROCDATA timerStatePtr, LPARAM lparamUserData)
+static int __stdcall TimerCallbackHandler(PCTLEDMGRTIMERPROCDATA timerStatePtr, LPARAM lparamUserData)
 {
 	using System::Runtime::InteropServices::GCHandle;
 	GCHandle h = GCHandle::FromIntPtr(IntPtr(lparamUserData));
@@ -111,7 +111,7 @@ SBAuroraReactive::TimerSettings SBAuroraReactive::LEDManager::RegisterTimerCallb
 
 	DWORD dwFlag = 0;
 	using System::Runtime::InteropServices::GCHandle;
-	HRESULT hr = m_Instance->RegisterTimerCallback(&TimerCallbackHandler, &param, GCHandle::ToIntPtr(GCHandle::Alloc(timerFunc)).ToInt64(), dwFlag);
+	HRESULT hr = m_Instance->RegisterTimerCallback(&TimerCallbackHandler, &param, (LPARAM)GCHandle::ToIntPtr(GCHandle::Alloc(timerFunc)).ToPointer(), dwFlag);
 	if (!SUCCEEDED(hr))
 		throw gcnew System::Runtime::InteropServices::ExternalException("Error registering ICTLEDMgr timer callback", hr);
 

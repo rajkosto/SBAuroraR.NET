@@ -100,14 +100,14 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\CTSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CTSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>user32.lib;kernel32.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /I /Y "$(TargetPath)" "$(SolutionDir)\Out\$(PlatformShortName)\"
-xcopy /I /Y "$(SolutionDir)\CTSDK\Redist\$(PlatformShortName)\*.dll" "$(SolutionDir)\Out\$(PlatformShortName)\"</Command>
+      <Command>xcopy /I /Y "$(TargetPath)" "..\..\Build\$(Configuration)\$(PlatformShortName)\"
+xcopy /I /Y "..\CTSDK\Redist\$(PlatformShortName)\*.dll" "..\..\Build\$(Configuration)\$(PlatformShortName)\"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Copy to output folder</Message>
@@ -119,14 +119,14 @@ xcopy /I /Y "$(SolutionDir)\CTSDK\Redist\$(PlatformShortName)\*.dll" "$(Solution
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\CTSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CTSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>user32.lib;kernel32.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /I /Y "$(TargetPath)" "$(SolutionDir)\Out\$(PlatformShortName)\"
-xcopy /I /Y "$(SolutionDir)\CTSDK\Redist\$(PlatformShortName)\*.dll" "$(SolutionDir)\Out\$(PlatformShortName)\"</Command>
+      <Command>xcopy /I /Y "$(TargetPath)" "..\..\Build\$(Configuration)\$(PlatformShortName)\"
+xcopy /I /Y "..\CTSDK\Redist\$(PlatformShortName)\*.dll" "..\..\Build\$(Configuration)\$(PlatformShortName)\"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Copy to output folder</Message>
@@ -137,14 +137,14 @@ xcopy /I /Y "$(SolutionDir)\CTSDK\Redist\$(PlatformShortName)\*.dll" "$(Solution
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\CTSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CTSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>user32.lib;kernel32.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /I /Y "$(TargetPath)" "$(SolutionDir)\Out\$(PlatformShortName)\"
-xcopy /I /Y "$(SolutionDir)\CTSDK\Redist\$(PlatformShortName)\*.dll" "$(SolutionDir)\Out\$(PlatformShortName)\"</Command>
+      <Command>xcopy /I /Y "$(TargetPath)" "..\..\Build\$(Configuration)\$(PlatformShortName)\"
+xcopy /I /Y "..\CTSDK\Redist\$(PlatformShortName)\*.dll" "..\..\Build\$(Configuration)\$(PlatformShortName)\"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Copy to output folder</Message>
@@ -155,14 +155,14 @@ xcopy /I /Y "$(SolutionDir)\CTSDK\Redist\$(PlatformShortName)\*.dll" "$(Solution
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)\CTSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\CTSDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>user32.lib;kernel32.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /I /Y "$(TargetPath)" "$(SolutionDir)\Out\$(PlatformShortName)\"
-xcopy /I /Y "$(SolutionDir)\CTSDK\Redist\$(PlatformShortName)\*.dll" "$(SolutionDir)\Out\$(PlatformShortName)\"</Command>
+      <Command>xcopy /I /Y "$(TargetPath)" "..\..\Build\$(Configuration)\$(PlatformShortName)\"
+xcopy /I /Y "..\CTSDK\Redist\$(PlatformShortName)\*.dll" "..\..\Build\$(Configuration)\$(PlatformShortName)\"</Command>
     </PostBuildEvent>
     <PostBuildEvent>
       <Message>Copy to output folder</Message>
